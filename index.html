@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Childcare billing, simplified.</title>
+  
+    <style>
+      /* Ensure the button doesn't jump on focus */
+      button:focus { outline: 2px solid transparent; outline-offset: 2px; }
+    </style>
+    <script>
+      function toggleNavbar(collapseID) {
+          var element = document.getElementById(collapseID);
+          element.classList.toggle("hidden");
+      }
+    </script>
+    </head>
+    <body class="bg-pink-50 font-sans leading-normal text-gray-600">
+      <header class="bg-white shadow">
+          <div class="container mx-auto p-5">
+              <div class="flex justify-between items-center">
+                  <a href="#" class="flex title-font font-medium items-center text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+                        <circle cx="50" cy="20" r="15" fill="#FFD1DC" />
+                        <circle cx="50" cy="50" r="15" fill="#FFD1DC" />
+                        <circle cx="50" cy="80" r="15" fill="#FFD1DC" />
+                    </svg>
+                      <span class="text-xl">Simplify Childcare</span>
+                  </a>
+                  <!-- Mobile Menu Button -->
+                  <button class="text-gray-800 inline-flex p-3 rounded lg:hidden" onclick="toggleNavbar('mobile-menu')">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                  </button>
+                  <!-- Navigation Menu for Desktop and Mobile -->
+                  <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="mobile-menu">
+                      <nav class="lg:flex-grow">
+                          <a href="#features" class="block px-3 py-2 rounded hover:bg-gray-100 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-4">Features</a>
+                          <a href="#testimonials" class="block px-3 py-2 rounded hover:bg-gray-100 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-4">Testimonials</a>
+                          <a href="#contact" class="block px-3 py-2 rounded hover:bg-gray-100 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-4">Contact</a>
+                      </nav>
+                      <button class="block w-full lg:w-auto px-3 py-2 rounded hover:bg-gray-100 bg-pink-500 text-white">Login</button>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="text-center py-48 px-4 md:px-16 lg:px-96 bg-white">
+      <div class="container mx-auto">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Childcare billing, simplified.</h1>
+        <p class="mb-8 leading-relaxed">The Simplify platform is designed to get you paid faster and give a fresh, modern payment experience to parents. Complete with autopay! <br/><br/>It's time to bring a little more joy into running a childcare center.</p>
+        <a href="#contact" class="cta-button inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">See how it works</a>
+      </div>
+    </section>
+
+  <section id="value-props" class="text-gray-600 body-font bg-pink-50">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Get paid faster, with happier parents</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Running a childcare center is demanding. You shouldn't also have to be a collections agent.</p>
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <circle cx="12" cy="12" r="10" fill="#FFD1DC"></circle>
+                <path d="M12 6v6l4 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <span class="title-font font-medium text-gray-900">Reduce Time Spent on Billing</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M2 12l9 9v-6h11V9H11V3l-9 9z" fill="#FFD1DC"></path>
+            </svg>
+            <span class="title-font font-medium text-gray-900">Get Paid Faster</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <rect x="2" y="5" width="20" height="14" rx="2" ry="2" fill="#FFD1DC"></rect>
+                <path d="M2 9h20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M5 12h3" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <span class="title-font font-medium text-gray-900">Give Parents a Modern Payment Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="text-gray-600 body-font bg-white">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Simple to start, with powerful results</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Plug us in and start seeing more parent payments within the first week. Here's how it works.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <!-- New Feature: Easy Data Import -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Hassle-Free Data Import</h2>
+            <p class="leading-relaxed text-base">Effortlessly import your existing data from spreadsheets or other tools, so you can start getting paid faster without changing the entire way your organization runs.</p>
+            <!-- Placeholder for Image or Icon -->
+          </div>
+        </div>
+        <!-- Easy Attendance Tracking -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Easy Attendance Tracking</h2>
+            <p class="leading-relaxed text-base">Quick and easy check-in interface if you need it, otherwise use our simple automated data import.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Smart Billing -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Smart Billing with Overtime Rates</h2>
+            <p class="leading-relaxed text-base">Automatically calculate fees, including overtime, without the hassle.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Automated Invoice Sending -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Automated Invoice Sending</h2>
+            <p class="leading-relaxed text-base">Send invoices with ease and keep your billing cycle on track.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Automated Reminders -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Automated Reminders for Unpaid Invoices</h2>
+            <p class="leading-relaxed text-base">Gentle nudges to ensure timely payments, without the awkward conversations.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Online Payment for Parents -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Online Payment and Autopay for Parents</h2>
+            <p class="leading-relaxed text-base">Convenient online payments, because busy parents appreciate simplicity.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Parent Portal -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Parent Portal</h2>
+            <p class="leading-relaxed text-base">A dedicated space for parents to manage billing and view attendance history.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+        <!-- Admin Portal -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Admin Portal</h2>
+            <p class="leading-relaxed text-base">Oversee rates, enrollment, staff, and gain insights from comprehensive stats and history.</p>
+            <!-- Placeholder for Image -->
+          </div>
+        </div>
+
+        <!-- New Feature: Streamlined Data Export -->
+        <div class="p-4 md:w-1/2 lg:w-1/3">
+          <div class="h-full bg-pink-100 p-8 rounded">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-3">Easy Data Export</h2>
+            <p class="leading-relaxed text-base">Need to process payroll or get the data into other systems? Our easy data export feature allows you to easily move your data where it needs to go, no fuss.</p>
+            <!-- Placeholder for Image or Icon -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-center text-gray-900 mb-12">Don't just take it from us</h1>
+      <div class="flex flex-col text-center w-full mb-20 px-4 md:px-16 lg:px-80">
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <p class="leading-relaxed text-lg">"Since we started using Simplify, my weeks have transformed. I spend significantly less time on billing and collecting payments, which has opened up more time to engage with the kids and enrich their learning experience. It's become one of our key secrets to how we create a joyful and nurturing environment for our children."</p>
+          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-8 mb-6"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Samantha Lee, Director at Sunny Days Childcare, New York</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="text-white bg-pink-500">
+    <div class="container mx-auto flex flex-wrap items-center justify-center text-center py-12 px-5 md:px-16 lg:px-96">
+      <div class="w-full md:w-auto">
+        <h2 class="text-2xl md:text-3xl font-bold">
+          More Time for What Truly Matters
+        </h2>
+        <p class="mt-2 text-lg text-pink-100">
+          Take back precious hours every week, so you can focus on what's really important: Enriching your children's lives.
+        </p>
+        <div class="mt-6">
+          <a href="#contact" class="cta-button inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-pink-500 bg-white hover:bg-pink-100">
+            See how it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-gray-600">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <span class="ml-3 text-xl">Simplify Childcare</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2024 Simplify Childcare
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a href="#" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <!-- SVG for social icon (e.g., Twitter) -->
+            </svg>
+          </a>
+          <!-- Additional social icons -->
+        </span>
+      </div>
+    </footer>
+      <!-- Book a Demo Modal -->
+      <div id="demoModal" class="hidden fixed z-10 inset-0 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <div class="fixed inset-0 transition-opacity">
+            <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+          </div>
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+          <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                  <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
+                    Book a Demo
+                  </h3>
+                  <div class="mt-2">
+                    <p class="text-sm leading-5 text-gray-500">
+                      Fill out the form below to schedule your demo.
+                    </p>
+                    <form id="demoForm" class="mt-4">
+                      <input type="text" placeholder="Name" name="name" required class="mt-1 p-2 border border-gray-300 w-full rounded-md">
+                      <input type="email" placeholder="Email" name="email" required class="mt-1 p-2 border border-gray-300 w-full rounded-md">
+                      <input type="tel" placeholder="Phone" name="phone" required class="mt-1 p-2 border border-gray-300 w-full rounded-md">
+                      <input type="text" placeholder="Company Name" name="company" required class="mt-1 p-2 border border-gray-300 w-full rounded-md">
+                      <button type="submit" class="mt-4 inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-pink-500 text-base leading-6 font-medium text-white shadow-sm hover:bg-pink-600 focus:outline-none sm:text-sm sm:leading-5">
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Listen for a click on any CTA or Contact buttons
+        document.querySelectorAll('.cta-button').forEach(item => {
+          item.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('demoModal').classList.remove('hidden');
+          });
+        });
+
+        // AJAX form submission
+        document.getElementById('demoForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          // Gather form data
+          const formData = new FormData(this);
+          const data = {};
+          formData.forEach((value, key) => {data[key] = value;});
+
+          // AJAX request to server
+          fetch('/submit-demo-form', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+            alert('Demo booked! We will contact you soon.');
+            document.getElementById('demoModal').classList.add('hidden');
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+        });
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+          if (event.target == document.getElementById('demoModal')) {
+            document.getElementById('demoModal').classList.add('hidden');
+          }
+        }
+      </script>
+  </body>
+  </html>
